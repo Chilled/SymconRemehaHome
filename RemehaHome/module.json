@@ -1,0 +1,14 @@
+{
+    "id": "{B77F9C77-06A0-49B7-A830-BBEA97D78686}",
+    "name": "RemehaHome",
+    "type": 3,
+    "vendor": "Remeha",
+    "aliases": [
+        "Remeha Home (eTwist)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "RMH",
+    "url": "https://github.com/msvisser/remeha_home"
+}

@@ -1,0 +1,84 @@
+{
+    "elements": [
+        {
+            "type": "Label",
+            "caption": "Login with the credentials of the Remeha Home app."
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "Email",
+            "caption": "E-Mail"
+        },
+        {
+            "type": "PasswordTextBox",
+            "name": "Password",
+            "caption": "Password"
+        },
+        {
+            "type": "NumberSpinner",
+            "name": "UpdateInterval",
+            "caption": "Update interval",
+            "suffix": "s",
+            "minimum": 30
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "ClimateZoneId",
+            "caption": "Climate zone ID (empty = first zone)"
+        },
+        {
+            "type": "CheckBox",
+            "name": "EnableHotWater",
+            "caption": "Hot water (DHW) variables"
+        },
+        {
+            "type": "CheckBox",
+            "name": "EnableEnergy",
+            "caption": "Energy consumption today (updated every 15 minutes)"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Button",
+            "caption": "Update now",
+            "onClick": "RMH_Update($id);"
+        },
+        {
+            "type": "Button",
+            "caption": "Show zones",
+            "onClick": "echo RMH_ListZones($id);"
+        },
+        {
+            "type": "Button",
+            "caption": "Reset login",
+            "onClick": "RMH_ResetLogin($id);"
+        }
+    ],
+    "status": [
+        {
+            "code": 102,
+            "icon": "active",
+            "caption": "Connected"
+        },
+        {
+            "code": 104,
+            "icon": "inactive",
+            "caption": "Please enter credentials"
+        },
+        {
+            "code": 201,
+            "icon": "error",
+            "caption": "Login failed (check credentials)"
+        },
+        {
+            "code": 202,
+            "icon": "error",
+            "caption": "Connection error"
+        },
+        {
+            "code": 203,
+            "icon": "error",
+            "caption": "No climate zone found"
+        }
+    ]
+}

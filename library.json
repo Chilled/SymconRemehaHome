@@ -1,0 +1,12 @@
+{
+    "id": "{086A2070-9CCD-47DD-A43A-2DE2279F5AD3}",
+    "author": "Sven Schellberg",
+    "name": "Remeha Home",
+    "url": "https://github.com/msvisser/remeha_home",
+    "compatibility": {
+        "version": "6.0"
+    },
+    "version": "1.0",
+    "build": 1,
+    "date": 0
+}
